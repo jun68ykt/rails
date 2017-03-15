@@ -244,7 +244,7 @@ You can also do:
 By default `ActionView::Partials::PartialRenderer` has its object in a local variable with the same name as the template. So, given:
 
 ```erb
-<%= render partial: "product" %>
+<%= render @product %>
 ```
 
 within `_product` partial we'll get `@product` in the local variable `product`,
